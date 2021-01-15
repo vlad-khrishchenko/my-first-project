@@ -11,24 +11,28 @@
 </head>
 
 <body>
+    <!-- Вдоженность list в link -->
+    <!-- Нужна ли тут картинка в header? -->
+    <!-- К чему привязываться к секции или к див? -->
+    <!-- тег h1-h6 и img вносятся в див? -->
 
     <header class="header">
         <div class="header__top">
             <nav class="header__menu menu">
                 <ul class="menu__list">
-                    <li class="men__item">
+                    <li class="menu__list-item">
                         <a class="menu__link" href="">Home</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__list-item">
                         <a class="menu__link" href="">Shop</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__list-item">
                         <a class="menu__link" href="">Story</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__list-item">
                         <a class="menu__link" href="">About</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__list-item">
                         <a class="menu__link" href="">Testimonials</a>
                     </li>
                 </ul>
@@ -41,17 +45,17 @@
         </div>
         <div class="header__personal personal">
             <ul class="personal__list">
-                <li class="personal__item">
+                <li class="personal__list-item">
                     <a class="personal__link" href="">
                         <img class="personal__icon-search" src="" alt="">
                     </a>
                 </li>
-                <li class="personal__item">
+                <li class="personal__list-item">
                     <a class="personal__link" href="">
                         <img class="personal__icon-search" src="" alt="">
                     </a>
                 </li>
-                <li class="personal__item">
+                <li class="personal__list-item">
                     <a class="personal__link" href="">
                         <img class="personal__icon-search" src="" alt="">
                         <span class="personal__cart-count">3</span>
@@ -59,19 +63,19 @@
                 </li>
             </ul>
         </div>
-        <div class="header_social social">
-            <ul class="social_list">
-                <li class="social_item">
-                    <a class="social_link" href="">
-                        <img class="social_icon-search" src="" alt="">
-                    </a>
-                </li>
-                <li class="social__item">
+        <div class="header__social social">
+            <ul class="social__list">
+                <li class="social__list-item">
                     <a class="social__link" href="">
                         <img class="social__icon-search" src="" alt="">
                     </a>
                 </li>
-                <li class="social__item">
+                <li class="social__list-item">
+                    <a class="social__link" href="">
+                        <img class="social__icon-search" src="" alt="">
+                    </a>
+                </li>
+                <li class="social__list-item">
                     <a class="social__link" href="">
                         <img class="social__icon-search" src="" alt="">
                     </a>
@@ -79,198 +83,188 @@
             </ul>
         </div>
         <div class="header__content">
-            <button class="btn header__btn btn--green-bg"><img class="btn__color" src="" alt=""> shop now</button>
+            <button class="btn header__btn btn--green-bg"><img class="btn__img" src="" alt=""> shop now</button>
         </div>
     </header>
 
     <section class="smoothies">
-        <h2 class="title smoothies__title">What are these smoothies?</h2>
-        <p class="slogan smoothies__slogan">A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes
+        <h2 class="title title--orange">What are these smoothies?</h2>
+        <p class="text text--white">A smoothie is a drink made from pureed raw fruit, vegetables, and
+            sometimes
             dairy
             products (milk, yogurt,
             ice-cream or cottage cheese), typically using a blender. Smoothies may be made using other ingredients,
             such as water, crushed ice, fruit juice, sweeteners (e.g. honey, sugar, stevia, or syrup), whey powder,
             plant milk, nuts, nut butter, seeds, tea, chocolate, herbal supplements, or nutritional supplements.
         </p>
-        <img class="smoothies__icon" src="" alt="">
+        <img class="smoothies__img" src="" alt="">
     </section>
 
     <section class="about">
-        <div class="about__product about">
-            <img class="about__icon" src="" alt="">
-            <h2 class="title about__title">What makes Smoothie an</h2>
-            <span class="about__title-text">awesome drink?</span>
+        <img class="about__img" src="" alt="">
+        <h2 class="title text--white">What makes Smoothie an<span class="text--green">awesome
+                drink?</span></h2>
+        <div class="about__quality">
             <ul class="about__list">
-                <li class="about__item">CrunchyPuffs Texture</li>
-                <li class="about__item">100 Calories per drink</li>
-                <li class="about__item">4g Plant Protein </li>
-                <li class="about__item">Good source of Magnesium & Vitamin B6</li>
-                <li class="about__item">No Sugar in our Savory Flavors</li>
-                <li class="about__item">Non-GMO, Vegan & Pagitleo</li>
-                <li class="about__item">Gluten-Free & Grain-Free</li>
-                <li class="about__item">Corn-Free & Soy-Free</li>
+                <li class="about__list-item about__text"><span class="text--bold">Crunchy</span>Puffs Texture</li>
+                <li class="about__list-item about__text "><span class="text--bold">100 Calories</span>per drink</li>
+                <li class="about__list-item about__text">4g Plant Protein </li>
+                <li class="about__list-item about__text">Good source of <span class="text--bold"> Magnesium & VitaminB6</span</li>>
+                <li class="about__list-item about__text"><span class="text--bold">No Sugar</span>in our Savory Flavors</li>
+                <li class="about__list-item about__text"><span class="text--bold">Non-GMO, Vegan & Pagitleo</span></li>
+                <li class="about__list-item about__text"><span class="text--bold">Gluten-Free & Grain-Free</span></li>
+                <li class="about__list-item about__text"><span class="text--bold">Corn-Free & Soy-Free</span></li>
             </ul>
-            <button class="btn about__btn btn--"><img class="btn__color" src="" alt="">About Organic
-                Smoothie</button>
+            <button class="btn btn--orange-border"><img class="btn__img" src="" alt="">About Organic Smoothie</button>
         </div>
     </section>
 
     <section class="products">
-        <div class="products__chocolate">
-            <img class="icon-products" src="" alt="">
-            <h3 class="title-products">Dark Chocolate Smoothie</h3>
-            <span class="volume-products">100 ml</span>
-            <button class="btn products__btn btn--"><img class="btn__color" src="" alt="">About Organic
-                buy</button>
+        <div class="products__item products__item--chocolate">
+            <img class="products__img" src="" alt="">
+            <h4 class="products__title">Dark Chocolate Smoothie</h4>
+            <span class="products__capacity">100 ml</span>
+            <button class="btn btn--white-br">buy <img class="btn__img" src="" alt=""></button>
         </div>
-        <div class="products__vegan">
-            <img class="icon-products" src="" alt="">
-            <h2 class="title-products">Vegan Lettuce Smoothie</h2>
-            <span class=" volume-products">100 ml</span>
-            <button class="btn products__btn btn--"><img class="btn__color" src="" alt="">About Organic
-                buy</button>
+        <div class="products__item products__item--vegan">
+            <img class="products__img" src="" alt="">
+            <h4 class="products__title">Vegan Lettuce Smoothie</h4>
+            <span class="products__capacity">100 ml</span>
+            <button class="btn btn--white-br">buy<img class="btn__img" src="" alt=""></button>
         </div>
-        <div class="products__lemon">
-            <img class="icon-products" src="" alt="">
-            <h2 class="title-products">Lemon Ginger Smoothie</h2>
-            <span class="volume-products">100 ml</span>
-            <button class="btn products__btn btn--"><img class="btn__color" src="" alt="">About Organic
-                buy</button>
+        <div class="products__item products__item--lemon">
+            <img class="products__img" src="" alt="">
+            <h4 class="products__title">Lemon Ginger Smoothie</h4>
+            <span class="products__capacity">100 ml</span>
+            <button class="btn btn--white-br">buy<img class="btn__img" src="" alt=""></button>
         </div>
-        <div class="products__turmeric">
-            <img class="icon-products" src="" alt="">
-            <h2 class="title-products">Turmeric Garlic Smoothie</h2>
-            <span class="volume-products">100 ml</span>
-            <button class="btn products__btn btn--">About Organicbuy</button>
-            <img class="btn__color" src="" alt="">
+        <div class="products__item products__item--turmeric">
+            <img class="products__img" src="" alt="">
+            <h4 class="products__title">Turmeric Garlic Smoothie</h4>
+            <span class="products__capacity">100 ml</span>
+            <button class="btn btn--white-br">buy<img class="btn__img" src="" alt=""></button>
         </div>
     </section>
 
     <section class="story">
-        <div class="story__products">
-            <h2 class="title story__title">Our story</h2>
-            <p class="story__slogan slogan">As products typically using raw fruits or vegetables, smoothies include dietary
+        <h2 class="title title--orange">Our story</h2>
+        <div class="story__product">
+            <p class="text text--white">As products typically using raw fruits or vegetables, smoothies
+                include
+                dietary
                 fiber (e.g. pulp, skin,
                 and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake.
             </p>
-            <button class="btn story__btn btn--"><img class="" src="" alt=""> Who we are</button>
+            <button class="btn btn--green"> Who we are<img class="btn__img" src="" alt=""></button>
         </div>
+        <img class="story__img" src="" alt="">
     </section>
 
     <section class="testimonials">
-        <h2 class="title testimonials__title">Why clients LOVE us?</h2>
+        <h2 class="title title--orange">Why clients LOVE us?</h2>
         <div class="testimonials__feedback">
-            <q class="testimonials__quote">”Smoothie is great. I don't know what else to say. I will let my mum know
+            <q class="text text--white">”Smoothie is great. I don't know what else to say. I will let my mum know
                 about this, she could really
                 make use of Smoothie! Smoothie saved my business.”
             </q>
-            <cite class="testimonials__city">- from Santa Monica, CA</cite>
+            <cite class="text--orange">- from Santa Monica, CA</cite>
         </div>
-        <img class="testimonials__icon" src="" alt="">
+        <img class="testimonials__img" src="" alt="">
     </section>
 
     <section class="blog">
-        <h2 class="title blog__title">Our blog</h2>
-        <div class="blog__text">
-            <img class="blog__icon" src="" alt="">
+        <h2 class="titl title--orange">Our blog</h2>
+        <img class="blog__img" src="" alt="">
+        <div class="blog__product">
             <h3 class="blog__title">ASAFOETIDA - THE NEXT TURMERIC?</h3>
             <time class="blog__date" datetime="2020-06-16">"Jun 16, 2020"</time>
-        </div>
-        <div>
-            <p class="lead blog__lead">If the fruit ingredients and the green vegetable ingredients are both juiced
+            <p class="text text--white">If the fruit ingredients and the green vegetable ingredients are both
+                juiced
                 ahead of time, the mixed
                 juice doesn't even have to be blended like a smoothie, i.e. a green juice or anything...
-                <span class="blog__continuation">Read More</span>
+                <span class="text--bold">Read More</span>
             </p>
         </div>
     </section>
 
     <section class="instagram">
-        <a class="instagram__link" href=""><img class="instagram__img" src="" alt="">ashasuperfoods</a>
-        <div class="instagram__photo">
-            <img class="instagram__icon" src="" alt="">
-            <img class="instagram__icon" src="" alt="">
-        </div>
-        <div class="instagram__photo">
-            <img class="instagram__icon" src="" alt="">
-            <img class="instagram__icon" src="" alt="">
-        </div>
-        <div class="instagram__photo">
-            <img class="instagram__icon" src="" alt="">
-            <img class="instagram__icon" src="" alt="">
-        </div>
-        <div class="instagram__photo">
-            <img class="instagram__icon" src="" alt="">
-            <img class="instagram__icon" src="" alt="">
-        </div>
-        <div class="instagram__photo">
-            <img class="instagram__icon" src="" alt="">
-            <img class="instagram__icon" src="" alt="">
+        <a class="instagram__link" href=""><img class="instagram__link-img" src="" alt="">ashasuperfoods</a>
+        <div class="instagram___photo-block">
+            <img class="instagram__photo-img" src="" alt="">
+            <img class="instagram__photo-img" src="" alt="">
+            <img class="instagram__photo-img" src="" alt="">
+            <img class="instagram__photo-img" src="" alt="">
+            <img class="instagram__photo-img" src="" alt="">
         </div>
     </section>
 
     <section class="footer">
-        <div class="footer__logo logo">
-            <a class="footer__link" href="">
-                <img class="logo__icon" src="" alt="">
-            </a>
-        </div>
-        <div class="footer__information information">
-            <h4 class="information__subtitle subtitle">Information</h4>
-            <nav class="information__menu menu">
-                <ul class="menu__list">
-                    <li class="men__item">
-                        <a class="menu__link" href="">Search</a>
+        <div class="footer__main">
+            <div class="footer__logo logo">
+                <a class="logo__link" href="">
+                    <img class="logo__icon" src="" alt="">
+                </a>
+            </div>
+            <div class="footer__information">
+                <h4 class="footer__title">Information</h4>
+                <nav class="footer__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="">Search</a>
+                        </li>
+                        <li class="menu__lis-item">
+                            <a class="menu__list-link" href="">Contact us</a>
+                        </li>
+                        <li class="menu__lis-item">
+                            <a class="menu__list-link" href="">Terms & Conditions</a>
+                        </li>
+                        <li class="menu__lis-item">
+                            <a class="menu__list-link" href="">Privacy Policy</a>
+                        </li>
+                        <li class="menu__lis-item">
+                            <a class="menu__list-link" href="">Testimonials</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__payment">
+                <h4 class="footer__title">Payment</h4>
+                <img class="footer__payment-img" src="" alt="">
+            </div>
+            <div class="footer__email">
+                <h4 class="footer__title">Don’t miss out!</h4>
+                <input class="footer__input" type="email" name="email" placeholder="Subscribe to our newsletter">
+                <span class="text">follow as</span>
+            </div>
+            <div class="footer__social social">
+                <ul class="social__list">
+                    <li class="social__list-item">
+                        <a class="social__list-link" href="">
+                            <img class="social__list-icon" src="" alt="">
+                        </a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="">Contact us</a>
+                    <li class="social__list-item">
+                        <a class="social__list-link" href="">
+                            <img class="social__list-icon" src="" alt="">
+                        </a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="">Terms & Conditions</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="">Privacy Policy</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="">Testimonials</a>
+                    <li class="social__list-item">
+                        <a class="social__list-link" href="">
+                            <img class="social__list-icon" src="" alt="">
+                        </a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-        <div class="footer__payment payment">
-            <h4 class="payment__subtitle subtitle">Payment</h4>
-            <img class="payment__icon" src="" alt="">
+        <div class="footer__bottom">
+            <small class="footer__copyright">© 2020. All Rights Reserved.</small>
+            <div>
+                <span class="footer__back">Go top</span>
+                <button class="btn footer__btn btn--orange"></button>
+            </div>
         </div>
-        <div class="footer__email email">
-            <h4 class="email__subtitle subtitle">Don’t miss out!</h4>
-            <input class="email__input" type="email" name="email" placeholder="Subscribe to our newsletter">
-            <span class="email__offer">follow as</span>
-        </div>
-        <div class="footer_social social">
-            <ul class="social_list">
-                <li class="social_item">
-                    <a class="social_link" href="">
-                        <img class="social_icon-search" src="" alt="">
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link" href="">
-                        <img class="social__icon-search" src="" alt="">
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link" href="">
-                        <img class="social__icon-search" src="" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer_copyright">
-            <small class="footer_copyright-small">© 2020. All Rights Reserved.</small>
-        </div>
-        <span class="footer__back">Go top</span>
-        <button class="btn footer__btn btn--"></button>
     </section>
+
 
 </body>
 
