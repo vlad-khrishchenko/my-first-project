@@ -1,27 +1,32 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
-    font-family: MuliRegular; 
-    src: url(../assets/fonts/Muli-Regular.woff); 
+    font-family: MuliRegular;
+    src: url(../assets/fonts/Muli-Regular.woff);
 }
+
 @font-face {
-    font-family: MuliBold; 
-    src: url(../assets/fonts/Muli-Bold.woff); 
+    font-family: MuliBold;
+    src: url(../assets/fonts/Muli-Bold.woff);
 }
+
 @font-face {
-    font-family: MuliExtraBoldItalic; 
-    src: url(../assets/fonts/Muli-ExtraBoldItalic.woff); 
+    font-family: MuliExtraBoldItalic;
+    src: url(../assets/fonts/Muli-ExtraBoldItalic.woff);
 }
+
 @font-face {
-    font-family: MuliExtraBold; 
-    src: url(../assets/fonts/Muli-ExtraBold.woff); 
+    font-family: MuliExtraBold;
+    src: url(../assets/fonts/muli_extrabold.woff);
 }
+
 @font-face {
-    font-family: PoppinsMedium; 
-    src: url(../assets/fonts/Poppins-Medium.woff); 
+    font-family: PoppinsMedium;
+    src: url(../assets/fonts/Poppins-Medium.woff);
 }
+
 @font-face {
-    font-family: PoppinsSemiBold; 
-    src: url(../assets/fonts/Poppins-SemiBold.woff); 
+    font-family: PoppinsSemiBold;
+    src: url(../assets/fonts/Poppins-SemiBold.woff);
 }
 
 /* Общие стили */
@@ -35,73 +40,102 @@ body {
 a {
     text-decoration: none;
 }
+.text {
+    font-size: 18px;
+    font-family: MuliRegular;
+    color: #1e1e1e;  
+}
+
+.title {
+    font-size: 50px;
+    font-family: MuliExtraBold;
+}
 
 
 /* Header */
 .header {
-    width: 1720px;
+    height: 100vh;
     background-image: url('/CSS/Smoothie\ Webpage-assets/header-bg-img.png');
     background-position: center;
     background-size: cover;
     color: #fff;
     border: 1px solid red;
 }
+
 .header__top {
     border: 1px solid red;
     display: flex;
     justify-content: space-between;
-    
+    padding: 78px 100px 105px;
+
 }
+
 .header__block-left {
     border: 1px solid red;
     margin-right: 206px;
-    margin-top: 97px;
+    display: flex;
+    align-items: center;
 }
+
 .menu__list {
     list-style: none;
     display: flex;
+    align-items: center;
+
 }
+
 .menu__list-item {
     margin-right: 35px;
 }
+
 .menu__link {
     font-size: 16px;
     font-family: MuliBold;
     color: white;
-    
+
 }
+
 .header__logo {
     border: 1px solid red;
-    margin-top: 69px;
     margin-right: 322px;
 }
+
 .header__block-right {
     border: 1px solid red;
-    margin-top: 97px;
     display: flex;
+    align-items: center;
 }
+
 .header__personal {
     border: 1px solid red;
     margin-right: 110px;
-    }
+}
+
 .personal__list {
     list-style: none;
     display: flex;
-    }
-    .personal__list-item {
-        margin-left: 40px;
-    }
+    align-items: center;
+}
+
+.personal__list-item {
+    margin-left: 40px;
+}
+
 .header__social {
     border: 1px solid red;
     display: flex;
 }
+
 .social__list {
     list-style: none;
     display: flex;
+    align-items: center; 
 }
+
 .social__list-item {
     margin-right: 11px
 }
+
 .social__link {
     background-color: #ffffff;
     width: 35px;
@@ -112,38 +146,118 @@ a {
     border-radius: 50%;
     text-align: center;
 }
-.btn__contener {
+
+.header__content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 765px;
+}
+
+.btn--green-bg {
+    background-color: #0aa566;
+}
+
+.btn {
+    font-family: MuliExtraBold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.header__btn {
+    width: 270px;
+    height: 70px;
+    border-radius: 35px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Smoothies */
+.smoothies {
+    background-color: #ffffff;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 105px 470px 162px;
+}
+
+.title--orange {
+    color: #f7ae3b;
+    
+}
+    
+.smoothies__text {
+    border: 1px solid red;
+    width: 915px; 
+    line-height: 2;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.smoothies__items-box {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 952px;
+}
+
+.smoothies__item {
     border: 1px solid red;
     display: flex;
     justify-content: center;
-    margin-top: 105px;
-    margin-bottom: 760px;
+    align-items: center;
+    flex-direction: column;
+    width: 237px;
+    height: 125px;
+    margin-top: 70px;
+
 }
-.header__btn {
-    height: 70px;
-    width: 280px;
-    border-radius: 35px;
-    background-color: #0aa566;
-    font-size: 24px;
+
+.smoothies__text-img {
+    font-size: 25px;
     font-family: MuliExtraBold;
-    color: #ffffff;
-    border: 1px solid red;
-    
+    color: #f2612d;
+    margin-top: 27px;
     
 }
-.btn__img {
-    height: 16px;
-    width: 30px;
-    margin-left: 70px;
-}
-
-
-/* Smoothies */
-
 
 /* About */
+.about {
+    border: 1px solid red;
+    background-color: #148370;
+    display: flex;
+    flex-direction: row;
+}
+.text__about {
+    font-size: 55px;
+    color: #edf3f3;
+    margin-top: 88px;
+}
+.text--green {
+    color: #6cad5c;
 
+}
 
+.about__quality {
+    border: 1px solid red;
+    display: flex;
+}
+.about__list {
+    border: 1px solid red;
+    display: flex;
+}
+
+.about__list-item {
+    border: 1px solid red;
+}
+
+.about__text {
+    font-family: MuliExtraBold;
+    font-size: 21px;
+    color: #ffffff;
+}
 /* Products */
 
 
@@ -164,8 +278,3 @@ a {
 
 
 /* Здесь будут медиа запросы */
-
-
-
-
-
