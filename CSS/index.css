@@ -1,11 +1,28 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
     font-family: MuliRegular; 
-    src: url(./assets/fonts/Muli-Regular.woff); 
+    src: url(../assets/fonts/Muli-Regular.woff); 
 }
-/*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
-
-
+@font-face {
+    font-family: MuliBold; 
+    src: url(../assets/fonts/Muli-Bold.woff); 
+}
+@font-face {
+    font-family: MuliExtraBoldItalic; 
+    src: url(../assets/fonts/Muli-ExtraBoldItalic.woff); 
+}
+@font-face {
+    font-family: MuliExtraBold; 
+    src: url(../assets/fonts/Muli-ExtraBold.woff); 
+}
+@font-face {
+    font-family: PoppinsMedium; 
+    src: url(../assets/fonts/Poppins-Medium.woff); 
+}
+@font-face {
+    font-family: PoppinsSemiBold; 
+    src: url(../assets/fonts/Poppins-SemiBold.woff); 
+}
 
 /* Общие стили */
 html,
@@ -21,6 +38,104 @@ a {
 
 
 /* Header */
+.header {
+    width: 1720px;
+    background-image: url('/CSS/Smoothie\ Webpage-assets/header-bg-img.png');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    border: 1px solid red;
+}
+.header__top {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header__block-left {
+    border: 1px solid red;
+    margin-right: 206px;
+    margin-top: 97px;
+}
+.menu__list {
+    list-style: none;
+    display: flex;
+}
+.menu__list-item {
+    margin-right: 35px;
+}
+.menu__link {
+    font-size: 16px;
+    font-family: MuliBold;
+    color: white;
+    
+}
+.header__logo {
+    border: 1px solid red;
+    margin-top: 69px;
+    margin-right: 322px;
+}
+.header__block-right {
+    border: 1px solid red;
+    margin-top: 97px;
+    display: flex;
+}
+.header__personal {
+    border: 1px solid red;
+    margin-right: 110px;
+    }
+.personal__list {
+    list-style: none;
+    display: flex;
+    }
+    .personal__list-item {
+        margin-left: 40px;
+    }
+.header__social {
+    border: 1px solid red;
+    display: flex;
+}
+.social__list {
+    list-style: none;
+    display: flex;
+}
+.social__list-item {
+    margin-right: 11px
+}
+.social__link {
+    background-color: #ffffff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+}
+.btn__contener {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    margin-top: 105px;
+    margin-bottom: 760px;
+}
+.header__btn {
+    height: 70px;
+    width: 280px;
+    border-radius: 35px;
+    background-color: #0aa566;
+    font-size: 24px;
+    font-family: MuliExtraBold;
+    color: #ffffff;
+    border: 1px solid red;
+    
+    
+}
+.btn__img {
+    height: 16px;
+    width: 30px;
+    margin-left: 70px;
+}
 
 
 /* Smoothies */
