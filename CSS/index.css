@@ -28,6 +28,10 @@
     font-family: PoppinsSemiBold;
     src: url(../assets/fonts/Poppins-SemiBold.woff);
 }
+@font-face {
+    font-family: MuliBlack;
+    src: url(../assets/fonts/Muli-Black.ttf);
+}
 
 /* Общие стили */
 html,
@@ -49,6 +53,14 @@ a {
 .title {
     font-size: 50px;
     font-family: MuliExtraBold;
+}
+
+.btn {
+    font-family: MuliExtraBold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 21px;
 }
 
 
@@ -157,20 +169,13 @@ a {
     background-color: #0aa566;
 }
 
-.btn {
-    font-family: MuliExtraBold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-}
-
 .header__btn {
     width: 270px;
     height: 70px;
     border-radius: 35px;
     font-size: 24px;
     color: #ffffff;
+    padding: 0 40px;
 }
 
 /* Smoothies */
@@ -228,38 +233,110 @@ a {
     border: 1px solid red;
     background-color: #148370;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 105px 360px 0 110px;
 }
+
+.about__img {
+    border: 1px solid red;
+}
+
 .text__about {
+    border: 1px solid red;
     font-size: 55px;
-    color: #edf3f3;
-    margin-top: 88px;
-}
+    font-family: MuliRegular;
+    color: #ffffff;
+    width: 590px;
+    }
+
 .text--green {
-    color: #6cad5c;
-
+   color: #cae941;
 }
 
-.about__quality {
-    border: 1px solid red;
-    display: flex;
-}
-.about__list {
-    border: 1px solid red;
-    display: flex;
+.text--bold{
+    font-family: MuliBlack;
 }
 
 .about__list-item {
-    border: 1px solid red;
+    font-size: 21px;
+    font-family: MuliRegular;
+    color: #ffffff;
+    line-height: 30px;
 }
 
-.about__text {
-    font-family: MuliExtraBold;
+.about__menu {
+    border: 1px solid red;
+    margin-bottom: 95px;
+}
+
+.about__list{
+    padding: 70px 0 55px;
+}
+
+.about__btn {
+    width: 380px;
+    height: 60px;
+    border-radius: 30px;
     font-size: 21px;
     color: #ffffff;
+    padding: 20px 30px;
+    background-color: #12866d;
+    border: 3px solid #f8b231;
 }
 /* Products */
 
+.products {
+    border: 1px solid red;
+    display: flex;
+}
+.products__item {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 25%;
+    padding: 125px 0 75px;
+}
+
+.products__title {
+    border: 1px solid red;
+    font-family: MuliBlack;
+    color: #ffffff;
+    font-size: 21px;
+    padding: 35px 0 15px;
+}
+
+.products__capacity {
+    border: 1px solid red;
+    font-family: MuliRegular;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 65px;
+}
+
+.btn__products {
+    border-radius: 30px;
+    width: 205px;
+    height: 55px;
+    background: transparent;
+    border: 3px solid white;
+    padding: 20px 30px;
+    color: white;
+}
+
+.products__item--chocolate {
+    background-color: #662b19;
+}
+.products__item--vegan {
+    background-color: #1b8771;
+}
+.products__item--lemon {
+    background-color: #f3b23c;
+}
+.products__item--turmeric {
+    background-color: #c2491f;
+}
 
 /* Story */
 
