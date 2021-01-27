@@ -78,6 +78,7 @@ a {
     border: 1px solid red;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 78px 100px 105px;
 
 }
@@ -340,8 +341,69 @@ a {
 
 /* Story */
 
+.story {
+    border: 1px solid red;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 310px 160px 305px;
+
+}
+
+.story__product {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    margin-right: 205px;
+
+}
+.story__title {
+    border: 1px solid red;
+    color: #f7ae3b;
+}
+
+.story__text {
+    width: 490px;
+    line-height: 2;
+    border: 1px solid red;
+    padding: 60px 0;
+}
+.story__btn {
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 21px;
+    color: #ffffff;
+    padding: 20px 30px;
+    background-color: #12866d;
+    border: 3px solid #f8b231;   
+}
 
 /* Testimonials */
+.testimonials {
+    border: 1px solid red;
+
+}
+.testimonials__title {
+    border: 1px solid red;  
+}
+
+.testimonials__content-text {
+    border: 1px solid red;
+    
+}
+
+.testimonials__text {
+    border: 1px solid red;
+    width: 460px;
+    line-height: 2;
+    text-align: center;
+}
+
+.testimonials__text-cite {
+    border: 1px solid red;
+}  
 
 
 /* Blog */
