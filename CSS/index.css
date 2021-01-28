@@ -273,6 +273,7 @@ a {
 
 .about__list{
     padding: 70px 0 55px;
+    list-style-image: url('/CSS/Smoothie\ Webpage-assets/1.png');
 }
 
 .about__btn {
