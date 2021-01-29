@@ -128,10 +128,19 @@ a {
     list-style: none;
     display: flex;
     align-items: center;
+    width: 185px;
+    justify-content: space-between;
 }
 
-.personal__list-item {
-    margin-left: 40px;
+.personal__cart-count {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .header__social {
@@ -157,7 +166,6 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    text-align: center;
 }
 
 .header__content {
@@ -425,6 +433,15 @@ a {
     margin-top: 30px;
     border: 1px solid red;
     color: #f7ae3b;
+    margin-bottom: 145px;
+}
+
+.testimonials__arrow {
+    width: 155px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
 }
 
 .testimonials__img {
@@ -433,10 +450,119 @@ a {
 
 
 /* Blog */
+.blog {
+    border: 1px solid red;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 100px 0 200px;
+}
 
+.blog__titl {
+    border: 1px solid red;
+    color: #f7ae3b;
+    margin-bottom: 60px;
+}
 
+.blog__left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog__right {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog__img-line {
+    border: 1px solid red;
+    margin-top: 165px;
+}
+
+.blog__small-title {
+    border: 1px solid red;
+    font-family: MuliExtraBold;
+    font-size: 30px;
+    color: #f2612d;
+    padding: 45px 0 0 60px;
+}
+
+.blog__date {
+    border: 1px solid red;
+    font-family: MuliRegular;
+    font-size: 16px;
+    color: #1e1e1e;
+    padding: 20px 0 45px 60px;
+}
+
+.blog__text { 
+    border: 1px solid red;
+    width: 475px;
+    line-height: 2;
+    margin-left: 125px;
+}
+.blog__img-arrow {
+    margin-left: 10px;
+}
 /* Instagram */
+.instagram {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.instagram__link {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: MuliExtraBold;
+    font-size: 24px;
+    color: #0aa566;
+    margin-bottom: 50px;
+}
+
+.instagram__link-img {
+    margin-right: 10px;
+}
+
+.instagram___photo {
+    display: flex;
+    width: 384px;
+    height: 384px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+.photo__link {
+    padding: 20px 25px;
+}
+
+.instagram___photo-block {
+    display: flex;
+}
+
+.photo--back-1 {
+    background-image: url('/CSS/Smoothie Webpage-assets/photo-1.png');
+}
+.photo--back-2 {
+    background-image: url('/CSS/Smoothie Webpage-assets/photo-2.png');
+}
+.photo--back-3 {
+    background-image: url('/CSS/Smoothie Webpage-assets/photo-3.png');
+}
+.photo--back-4 {
+    background-image: url('/CSS/Smoothie Webpage-assets/photo-4.png');
+}
+.photo--back-5 {
+    background-image: url('/CSS/Smoothie Webpage-assets/photo-5.png');
+}
 
 /* Footer */
 
