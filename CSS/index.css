@@ -505,9 +505,16 @@ a {
     line-height: 2;
     margin-left: 125px;
 }
+
+.text--bold {
+    border: 1px solid red;
+}
+
 .blog__img-arrow {
+    border: 1px solid red;
     margin-left: 10px;
 }
+
 /* Instagram */
 .instagram {
     border: 1px solid red;
@@ -565,6 +572,143 @@ a {
 }
 
 /* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__top {
+    border: 1px solid red;
+    background: #fba93d;
+    display: flex;
+    align-items: flex-start;
+    padding: 80px 105px 90px 100px;
+    
+}
+
+.footer__logo {
+    border: 1px solid red;
+    margin: 65px 285px 0 0;
+}
+
+.footer__information {
+    border: 1px solid red;
+    margin-right: 155px;
+}
+
+.footer__title {
+    border: 1px solid red;
+    font-size: 26px;
+    font-family: MuliExtraBold;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.information__menu {
+    margin-top: 45px;
+}
+
+.information__list {
+    list-style: none;
+}
+
+.information__list-link {
+border: 1px solid red;
+font-size: 18px;
+font-family: MuliBold;
+color: #6d450c;
+line-height: 2.5;
+}
+
+.footer__payment {
+    border: 1px solid red;
+    margin-right: 160px;
+}
+
+.footer__payment-contener {
+    border: 1px solid red;
+    width: 245px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.footer__left-block {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__email {
+    border: 1px solid red;
+    padding: 30px 0 30px;
+}
+
+.footer__input {
+    border: none;
+    width: 495px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 30px;
+}
+
+.footer__connection {
+    border: 1px solid rgb(4, 7, 75);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.connection__text {
+    border: 1px solid red;
+    margin-right: 45px;
+    color: #6d450c;
+    font-family: MuliExtraBold;
+}
+
+.connection__list {
+    border: 1px solid red;
+    width: 110px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__bottom {
+    background: #692921;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bottom__copyright {
+    border: 1px solid red;
+    font-size: 13px;
+    font-family: MuliRegular;
+    color: #af8a82;
+    margin-right: 670px;
+}
+
+.bottom__right-block {
+    border: 1px solid red;
+    margin-right: 105px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom__text {
+    font-size: 16px;
+    font-family: MuliBold;
+    color: #ffffff;
+}
+
+.bottom__btn {
+    width: 50px;
+    height: 50px;
+    background: #f2662f;
+}
+
+
+
 
 
 
