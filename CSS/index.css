@@ -28,6 +28,7 @@
     font-family: PoppinsSemiBold;
     src: url(../assets/fonts/Poppins-SemiBold.woff);
 }
+
 @font-face {
     font-family: MuliBlack;
     src: url(../assets/fonts/Muli-Black.ttf);
@@ -44,10 +45,11 @@ body {
 a {
     text-decoration: none;
 }
+
 .text {
     font-size: 18px;
     font-family: MuliRegular;
-    color: #1e1e1e;  
+    color: #1e1e1e;
 }
 
 .title {
@@ -80,7 +82,6 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 78px 100px 105px;
-
 }
 
 .header__block-left {
@@ -94,18 +95,20 @@ a {
     list-style: none;
     display: flex;
     align-items: center;
-
 }
 
 .menu__list-item {
     margin-right: 35px;
 }
 
+.menu__list-item:last-child {
+    margin-right: 0;
+}
+
 .menu__link {
     font-size: 16px;
     font-family: MuliBold;
     color: white;
-
 }
 
 .header__logo {
@@ -140,7 +143,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .header__social {
@@ -151,7 +153,7 @@ a {
 .social__list {
     list-style: none;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .social__list-item {
@@ -194,17 +196,17 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 105px 470px 162px;
+    padding: 105px 0 162px;
 }
 
 .title--orange {
     color: #f7ae3b;
-    
+
 }
-    
+
 .smoothies__text {
     border: 1px solid red;
-    width: 915px; 
+    width: 915px;
     line-height: 2;
     margin-top: 50px;
     text-align: center;
@@ -226,7 +228,6 @@ a {
     width: 237px;
     height: 125px;
     margin-top: 70px;
-
 }
 
 .smoothies__text-img {
@@ -234,7 +235,7 @@ a {
     font-family: MuliExtraBold;
     color: #f2612d;
     margin-top: 27px;
-    
+
 }
 
 /* About */
@@ -242,9 +243,9 @@ a {
     border: 1px solid red;
     background-color: #148370;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
-    padding: 105px 360px 0 110px;
+    padding: 105px 0;
 }
 
 .about__img {
@@ -257,13 +258,13 @@ a {
     font-family: MuliRegular;
     color: #ffffff;
     width: 590px;
-    }
-
-.text--green {
-   color: #cae941;
 }
 
-.text--bold{
+.text--green {
+    color: #cae941;
+}
+
+.text--bold {
     font-family: MuliBlack;
 }
 
@@ -276,11 +277,11 @@ a {
 
 .about__menu {
     border: 1px solid red;
-    margin-bottom: 95px;
+    margin-left: 145px;
 }
 
-.about__list{
-    padding: 70px 0 55px;
+.about__list {
+    padding: 70px 0 55px 30px;
     list-style-image: url('/CSS/Smoothie\ Webpage-assets/1.png');
 }
 
@@ -288,18 +289,19 @@ a {
     width: 380px;
     height: 60px;
     border-radius: 30px;
-    font-size: 21px;
     color: #ffffff;
     padding: 20px 30px;
     background-color: #12866d;
     border: 3px solid #f8b231;
 }
+
 /* Products */
 
 .products {
     border: 1px solid red;
     display: flex;
 }
+
 .products__item {
     border: 1px solid red;
     display: flex;
@@ -338,12 +340,15 @@ a {
 .products__item--chocolate {
     background-color: #662b19;
 }
+
 .products__item--vegan {
     background-color: #1b8771;
 }
+
 .products__item--lemon {
     background-color: #f3b23c;
 }
+
 .products__item--turmeric {
     background-color: #c2491f;
 }
@@ -367,6 +372,7 @@ a {
     margin-right: 205px;
 
 }
+
 .story__title {
     border: 1px solid red;
     color: #f7ae3b;
@@ -378,6 +384,7 @@ a {
     border: 1px solid red;
     padding: 60px 0;
 }
+
 .story__btn {
     width: 300px;
     height: 60px;
@@ -386,7 +393,7 @@ a {
     color: #ffffff;
     padding: 20px 30px;
     background-color: #12866d;
-    border: 3px solid #f8b231;   
+    border: 3px solid #f8b231;
 }
 
 /* Testimonials */
@@ -499,7 +506,7 @@ a {
     padding: 20px 0 45px 60px;
 }
 
-.blog__text { 
+.blog__text {
     border: 1px solid red;
     width: 475px;
     line-height: 2;
@@ -545,28 +552,35 @@ a {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    
+    background-size: cover;
+    background-position: center;
 }
+
 .photo__link {
     padding: 20px 25px;
 }
 
 .instagram___photo-block {
     display: flex;
+    width: 100%;
 }
 
 .photo--back-1 {
     background-image: url('/CSS/Smoothie Webpage-assets/photo-1.png');
 }
+
 .photo--back-2 {
     background-image: url('/CSS/Smoothie Webpage-assets/photo-2.png');
 }
+
 .photo--back-3 {
     background-image: url('/CSS/Smoothie Webpage-assets/photo-3.png');
 }
+
 .photo--back-4 {
     background-image: url('/CSS/Smoothie Webpage-assets/photo-4.png');
 }
+
 .photo--back-5 {
     background-image: url('/CSS/Smoothie Webpage-assets/photo-5.png');
 }
@@ -583,7 +597,6 @@ a {
     display: flex;
     align-items: flex-start;
     padding: 80px 105px 90px 100px;
-    
 }
 
 .footer__logo {
@@ -594,6 +607,9 @@ a {
 .footer__information {
     border: 1px solid red;
     margin-right: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer__title {
@@ -604,20 +620,21 @@ a {
     margin-bottom: 35px;
 }
 
-.information__menu {
-    margin-top: 45px;
-}
-
 .information__list {
     list-style: none;
+    line-height: 2.5;
+    width: 170px;
+}
+
+.information__list-item:last-child {
+    margin-bottom: -10px;
 }
 
 .information__list-link {
-border: 1px solid red;
-font-size: 18px;
-font-family: MuliBold;
-color: #6d450c;
-line-height: 2.5;
+    border: 1px solid red;
+    font-size: 18px;
+    font-family: MuliBold;
+    color: #6d450c;
 }
 
 .footer__payment {
@@ -627,9 +644,14 @@ line-height: 2.5;
 
 .footer__payment-contener {
     border: 1px solid red;
-    width: 245px;
+    width: 266px;
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer__payment-img {
+    padding: 0 20px 20px 0;
 }
 
 .footer__left-block {
@@ -676,7 +698,7 @@ line-height: 2.5;
 .footer__bottom {
     background: #692921;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -685,12 +707,10 @@ line-height: 2.5;
     font-size: 13px;
     font-family: MuliRegular;
     color: #af8a82;
-    margin-right: 670px;
 }
 
 .bottom__right-block {
     border: 1px solid red;
-    margin-right: 105px;
     display: flex;
     align-items: center;
 }
