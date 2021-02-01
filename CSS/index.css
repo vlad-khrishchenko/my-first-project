@@ -247,13 +247,17 @@ a {
     border: 1px solid red;
     background-color: #148370;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: start;
-    padding: 105px 0;
+    position: relative;
+    padding: 85px 355px 90px 0
 }
 
 .about__img {
     border: 1px solid red;
+    position: absolute;
+    left: 149px;
+    top: 60px;
 }
 
 .text__about {
@@ -276,12 +280,11 @@ a {
     font-size: 21px;
     font-family: MuliRegular;
     color: #ffffff;
-    line-height: 30px;
+    line-height: 2;
 }
 
 .about__menu {
     border: 1px solid red;
-    margin-left: 145px;
 }
 
 .about__list {
@@ -365,16 +368,29 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 120px 310px 160px 305px;
-
+    padding: 120px 0 160px;
 }
 
-.story__product {
+.story__right-block {
+    position: relative;
+}
+
+.story__right-block::after {
+    position: absolute;
+    display: block;
+    height: 216px;
+    width: 290px;
+    content: '';
+    background-image: url(/CSS/Smoothie\ Webpage-assets/Stamp.png);
+    top: 0;
+    left: -170px;
+}
+
+.story__left-block {
     border: 1px solid red;
     display: flex;
     flex-direction: column;
     margin-right: 205px;
-
 }
 
 .story__title {
