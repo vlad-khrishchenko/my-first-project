@@ -79,14 +79,14 @@ a {
 .header__top {
     border: 1px solid red;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 78px 100px 105px;
+    padding: 78px 0 105px;
 }
 
 .header__block-left {
     border: 1px solid red;
-    margin-right: 206px;
+    margin-right: 215px;
     display: flex;
     align-items: center;
 }
@@ -113,7 +113,7 @@ a {
 
 .header__logo {
     border: 1px solid red;
-    margin-right: 322px;
+    margin-right: 340px;
 }
 
 .header__block-right {
@@ -177,7 +177,6 @@ a {
 .header__content {
     display: flex;
     justify-content: center;
-    margin-bottom: 765px;
 }
 
 .btn--green-bg {
@@ -260,7 +259,7 @@ a {
     top: 60px;
 }
 
-.text__about {
+.about__title {
     border: 1px solid red;
     font-size: 55px;
     font-family: MuliRegular;
@@ -285,6 +284,18 @@ a {
 
 .about__menu {
     border: 1px solid red;
+    position: relative;
+}
+
+.about__menu::before {
+    display: block;
+    content: '';
+    background-image: url('/CSS/Smoothie\ Webpage-assets/AboutLine.png');
+    width: 450px;
+    height: 13px;
+    position: absolute;
+    top: 125px;
+    right: 80px;
 }
 
 .about__list {
@@ -377,7 +388,6 @@ a {
 
 .story__right-block::after {
     position: absolute;
-    display: block;
     height: 216px;
     width: 290px;
     content: '';
