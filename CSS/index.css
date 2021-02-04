@@ -154,10 +154,20 @@ a {
     display: flex;
 }
 
+.social__list::before {
+    content: '';
+    background-image: url('/CSS/Smoothie\ Webpage-assets/LineHeader.png');
+    width: 47px;
+    height: 2px;
+    position: absolute;
+    left: -75px;
+}
+
 .social__list {
     list-style: none;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .social__list-item {
@@ -433,6 +443,17 @@ a {
     flex-direction: column;
     align-items: center;
     background: #6c321d;
+    position: relative;
+}
+
+.testimonials::before {
+    content: '';
+    background-image: url('/CSS/Smoothie\ Webpage-assets/Dots.png');
+    width: 410px;
+    height: 301px;
+    position: absolute;
+    right: 60px;
+    top: -80px;
 }
 
 .testimonials__title {
@@ -447,42 +468,69 @@ a {
 
 .testimonials__contener {
     border: 1px solid red;
-    display: flex;
-    align-items: center;
-    padding: 130px 0 210px;
-}
-
-.testimonials__contener-text {
-    border: 1px solid red;
+    padding: 195px 0 235px;
+    width: 735px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-right: 70px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.testimonials__contener::before {
+    content: '';
+    width: 220px;
+    height: 220px;
+    background-image: url('/CSS/Smoothie\ Webpage-assets/testimonials.png');
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+
+.testimonials__contener::after {
+    content: '';
+        width: 30px;
+        height: 16px;
+    background-image: url('/CSS/Smoothie\ Webpage-assets/Arrow left .png');
+    position: absolute;
+    bottom: 80px;
+    left: 285px;
 }
 
 .testimonials__text {
     border: 1px solid red;
     width: 475px;
     text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 1.944;
+    position: relative;
+}
+
+.testimonials__text::before {
+    content: '';
+    display: block;
+    background-image: url('/CSS/Smoothie\ Webpage-assets/SarahA.png');
+    width: 765px;
+    height: 150px;
+    top: -100px;
+    left: -165px;
+    position: absolute;
 }
 
 .text__cite {
     margin-top: 30px;
     border: 1px solid red;
     color: #f7ae3b;
-    margin-bottom: 145px;
+    margin-left: 135px;
 }
 
-.testimonials__arrow {
-    width: 155px;
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-}
-
-.testimonials__img {
-    border: 1px solid red;
+.text__cite::after {
+    content: '';
+        width: 30px;
+        height: 16px;
+    background-image: url('/CSS/Smoothie\ Webpage-assets/Arrow right .png');
+    position: absolute;
+    bottom: 80px;
+    right: 285px;
 }
 
 
@@ -693,14 +741,41 @@ a {
 .footer__email {
     border: 1px solid red;
     padding: 30px 0 30px;
+    position: relative;
+}
+
+.footer__email::after {
+    content: '';
+    background-image: url('/CSS/Smoothie\ Webpage-assets/Arrow emal.png');
+    position: absolute;
+    width: 48px;
+    height: 43px;
+    bottom: -30px;
+    right: 270px;
+}
+
+.footer__email::before {
+    content: '';
+    background-image: url('/CSS/Smoothie\ Webpage-assets/emal Icon.png');
+    position: absolute;
+    width: 24px;
+    height: 19px;
+    top: 50px;
+    left: 25px;
 }
 
 .footer__input {
     border: none;
     width: 495px;
     height: 60px;
-    background: #ffffff;
     border-radius: 30px;
+    padding-left: 70px;   
+}
+
+.footer__input::placeholder {
+    font-family: MuliBold;
+    font-size: 17px;
+    color: #662b19;
 }
 
 .footer__connection {
@@ -728,8 +803,18 @@ a {
 .footer__bottom {
     background: #692921;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    position: relative;
+    height: 60px;
+}
+
+.bottom__contener {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 960px;
+    border: 1px solid red;
 }
 
 .bottom__copyright {
@@ -743,12 +828,14 @@ a {
     border: 1px solid red;
     display: flex;
     align-items: center;
+    margin-right: 100px;
 }
 
 .bottom__text {
     font-size: 16px;
     font-family: MuliBold;
     color: #ffffff;
+    margin-right: 15px;
 }
 
 .bottom__btn {
