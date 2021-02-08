@@ -801,6 +801,7 @@ a {
 }
 
 .footer__bottom {
+    border: 2px solid red;
     background: #692921;
     display: flex;
     justify-content: flex-end;
