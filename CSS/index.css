@@ -48,13 +48,13 @@ a {
 }
 
 .text {
-    font-size: 18px;
+    font-size: calc(20px + (18 - 20)*((100vw - 320px) / (1920 - 320)));
     font-family: MuliRegular;
     color: #1e1e1e;
 }
 
 .title {
-    font-size: 50px;
+    font-size: calc(35px + (50 - 35)*((100vw - 320px) / (1920 - 320)));
     font-family: MuliExtraBold;
 }
 
@@ -80,56 +80,62 @@ a {
 .header__top {
     border: 1px solid red;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    position: relative;
     padding: 78px 0 105px;
 }
-
+.navigation {
+    border: 1px solid red;
+    min-width: 1720px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navigation__btn {
+    background-color: transparent;
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
 .header__block-left {
     border: 1px solid red;
-    margin-right: 215px;
     display: flex;
     align-items: center;
 }
-
 .menu__list {
     list-style: none;
     display: flex;
     align-items: center;
 }
-
 .menu__list-item {
     margin-right: 35px;
 }
-
 .menu__list-item:last-child {
     margin-right: 0;
 }
-
 .menu__link {
     font-size: 16px;
     font-family: MuliBold;
     color: white;
 }
-
 .header__logo {
     border: 1px solid red;
-    margin-right: 340px;
-    position: relative;
-    left: 45px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    left: 43%;
 }
-
 .header__block-right {
     border: 1px solid red;
     display: flex;
     align-items: center;
 }
-
 .header__personal {
     border: 1px solid red;
     margin-right: 110px;
 }
-
 .personal__list {
     list-style: none;
     display: flex;
@@ -138,7 +144,6 @@ a {
     justify-content: space-between;
     position: relative;
 }
-
 .personal__cart-count {
     width: 18px;
     height: 18px;
@@ -151,12 +156,10 @@ a {
     right: -15px;
     top: -15px;
 }
-
 .header__social {
     border: 1px solid red;
     display: flex;
 }
-
 .social__list::before {
     content: '';
     background-image: url('/CSS/image/LineHeader.png');
@@ -165,18 +168,15 @@ a {
     position: absolute;
     left: -75px;
 }
-
 .social__list {
     list-style: none;
     display: flex;
     align-items: center;
     position: relative;
 }
-
 .social__list-item {
     margin-right: 11px
 }
-
 .social__link {
     background-color: #ffffff;
     width: 35px;
@@ -186,16 +186,13 @@ a {
     align-items: center;
     border-radius: 50%;
 }
-
 .header__content {
     display: flex;
     justify-content: center;
 }
-
 .btn--green-bg {
     background-color: #0aa566;
 }
-
 .header__btn {
     width: 270px;
     height: 70px;
@@ -213,6 +210,7 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 105px 0 162px;
+    max-width: 1920px;
 }
 
 .title--orange {
@@ -222,7 +220,7 @@ a {
 
 .smoothies__text {
     border: 1px solid red;
-    width: 915px;
+    max-width: 915px;
     line-height: 2;
     margin-top: 50px;
     text-align: center;
@@ -232,7 +230,7 @@ a {
     border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
-    width: 952px;
+    max-width: 952px;
 }
 
 .smoothies__item {
@@ -264,20 +262,31 @@ a {
     position: relative;
     padding: 85px 355px 90px 0
 }
-
 .about__img {
     border: 1px solid red;
     position: absolute;
     left: 149px;
     top: 60px;
 }
-
+.about__menu {
+    border: 1px solid red;
+    position: relative;
+    max-width: 590px;
+}
+.about__menu::before {
+    display: block;
+    content: '';
+    background-image: url('/CSS/image/AboutLine.png');
+    width: 450px;
+    height: 13px;
+    position: absolute;
+    top: 125px;
+    right: 80px;
+}
 .about__title {
     border: 1px solid red;
-    font-size: 55px;
     font-family: MuliRegular;
     color: #ffffff;
-    width: 590px;
 }
 
 .text--green {
@@ -289,33 +298,15 @@ a {
 }
 
 .about__list-item {
-    font-size: 21px;
+    font-size: calc(25px + (21 - 25)*((100vw - 320px) / (1920 - 320)));
     font-family: MuliRegular;
     color: #ffffff;
     line-height: 2;
 }
-
-.about__menu {
-    border: 1px solid red;
-    position: relative;
-}
-
-.about__menu::before {
-    display: block;
-    content: '';
-    background-image: url('/CSS/image/AboutLine.png');
-    width: 450px;
-    height: 13px;
-    position: absolute;
-    top: 125px;
-    right: 80px;
-}
-
 .about__list {
     padding: 70px 0 55px 30px;
     list-style-image: url('/CSS/image/1.png');
 }
-
 .about__btn {
     width: 380px;
     height: 60px;
@@ -852,9 +843,98 @@ a {
     right: 100px;
 }
 
+/* @media (max-width: 320px)*/
 
+@media (max-width: 320px) {
+    .header {
+        height: 65vh;
+    }
+    .header__top {
+        padding: 25px 0 115px;
+    }
+    .logo__icon {
+        width: 190px;
+        height: 70px;
+    }
+    .navigation__btn {
+        display: none;
+    }
+    .header__logo {
+        position: absolute;
+        top: 53%;
+        left: 17%;
+    }
+    .header__btn {
+    width: 235px;
+    height: 70px;
+    font-size: 22px;
+    }
+    .navigation__btn {
+        display: block;
+    }
+    .smoothies {
+        padding: 36px 0;
+        text-align: center;
+    }
+    .smoothies__text {
+        margin-top: 15px;
+    }
+    .smoothies__item {
+        width: 149px;
+        height: 137px;
+        margin-top: 35px;
+        position: relative;
+        top: -50px;
+    }
+    .smoothies__text-img {
+        font-size: 30px;
+        margin-top: 0;
+        position: absolute;
+        top: 107px;
+    }
+    .about {
+        padding: 0;
+    }
+    .about__menu::before {
+        width: 270px;
+    height: 15px;
+    right: 25px;
+    }
+    .about__img {
+        display: none;
+    }
+    .about__menu {
+        max-width: 300px;
+    }
+    .about__list {
+        padding: 35px 0 19px 25px;
+    }
+    .about__btn {
+        width: 285px;
+        height: 72px;
+        border-radius: 40px;
+        padding: 20px 30px;
+        font-size: 25px;
+    }
+}
+/* @media (max-width: 768px) {
+    .smoothies {
+        padding: 35px 0 35px;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .smoothies__text {
+        width: 720px;
+    }
+    .text {
+        font-size: 25px;
+    }
+    .smoothies__items-box {
+        width: 715px;
+    }
+    .smoothies__item {
+        margin-top: 15px;
+    }
 
-
-
-
-/* Здесь будут медиа запросы */
+} */
