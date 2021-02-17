@@ -76,7 +76,6 @@ a {
     color: #fff;
     border: 1px solid red;
 }
-
 .header__top {
     border: 1px solid red;
     display: flex;
@@ -98,6 +97,7 @@ a {
     position: absolute;
     top: 15px;
     right: 15px;
+    border-style: none;
 }
 .header__block-left {
     border: 1px solid red;
@@ -212,12 +212,9 @@ a {
     padding: 105px 0 162px;
     max-width: 1920px;
 }
-
 .title--orange {
     color: #f7ae3b;
-
 }
-
 .smoothies__text {
     border: 1px solid red;
     max-width: 915px;
@@ -225,14 +222,12 @@ a {
     margin-top: 50px;
     text-align: center;
 }
-
 .smoothies__items-box {
     border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     max-width: 952px;
 }
-
 .smoothies__item {
     border: 1px solid red;
     display: flex;
@@ -243,13 +238,11 @@ a {
     height: 125px;
     margin-top: 70px;
 }
-
 .smoothies__text-img {
     font-size: 25px;
     font-family: MuliExtraBold;
     color: #f2612d;
     margin-top: 27px;
-
 }
 
 /* About */
@@ -288,15 +281,12 @@ a {
     font-family: MuliRegular;
     color: #ffffff;
 }
-
 .text--green {
     color: #cae941;
 }
-
 .text--bold {
     font-family: MuliBlack;
 }
-
 .about__list-item {
     font-size: calc(25px + (21 - 25)*((100vw - 320px) / (1920 - 320)));
     font-family: MuliRegular;
@@ -323,7 +313,6 @@ a {
     border: 1px solid red;
     display: flex;
 }
-
 .products__item {
     border: 1px solid red;
     display: flex;
@@ -332,23 +321,20 @@ a {
     flex: 0 1 25%;
     padding: 125px 0 75px;
 }
-
 .products__title {
     border: 1px solid red;
     font-family: MuliBlack;
     color: #ffffff;
-    font-size: 21px;
+    font-size: calc(30px + (21 - 30)*((100vw - 320px) / (1920 - 320)));
     padding: 35px 0 15px;
 }
-
 .products__capacity {
     border: 1px solid red;
     font-family: MuliRegular;
     color: #ffffff;
-    font-size: 18px;
+    font-size: calc(26px + (18 - 26)*((100vw - 320px) / (1920 - 320)));
     margin-bottom: 65px;
 }
-
 .btn__products {
     border-radius: 30px;
     width: 205px;
@@ -357,20 +343,17 @@ a {
     border: 3px solid white;
     padding: 20px 30px;
     color: white;
+    font-size: calc(30px + (21 - 30)*((100vw - 320px) / (1920 - 320)));
 }
-
 .products__item--chocolate {
     background-color: #662b19;
 }
-
 .products__item--vegan {
     background-color: #1b8771;
 }
-
 .products__item--lemon {
     background-color: #f3b23c;
 }
-
 .products__item--turmeric {
     background-color: #c2491f;
 }
@@ -385,11 +368,9 @@ a {
     align-items: center;
     padding: 120px 0 160px;
 }
-
 .story__right-block {
     position: relative;
 }
-
 .story__right-block::after {
     position: absolute;
     height: 216px;
@@ -399,26 +380,22 @@ a {
     top: 0;
     left: -170px;
 }
-
 .story__left-block {
     border: 1px solid red;
     display: flex;
     flex-direction: column;
     margin-right: 205px;
 }
-
 .story__title {
     border: 1px solid red;
     color: #f7ae3b;
 }
-
 .story__text {
     width: 490px;
     line-height: 2;
     border: 1px solid red;
     padding: 60px 0;
 }
-
 .story__btn {
     width: 300px;
     height: 60px;
@@ -439,7 +416,6 @@ a {
     background: #6c321d;
     position: relative;
 }
-
 .testimonials::before {
     content: '';
     background-image: url('/CSS/image/Dots.png');
@@ -449,17 +425,14 @@ a {
     right: 60px;
     top: -80px;
 }
-
 .testimonials__title {
     border: 1px solid red;
     color: #f7ae3b;
     margin-top: 130px;
 }
-
 .text--orange-bold {
     color: #f2612d;
 }
-
 .testimonials__contener {
     border: 1px solid red;
     padding: 195px 0 235px;
@@ -470,7 +443,6 @@ a {
     position: relative;
     z-index: 1;
 }
-
 .testimonials__contener::before {
     content: '';
     width: 220px;
@@ -480,7 +452,6 @@ a {
     right: 0;
     top: 120px;
 }
-
 .testimonials__contener::after {
     content: '';
         width: 30px;
@@ -490,7 +461,6 @@ a {
     bottom: 80px;
     left: 285px;
 }
-
 .testimonials__text {
     border: 1px solid red;
     width: 475px;
@@ -499,7 +469,6 @@ a {
     line-height: 1.944;
     position: relative;
 }
-
 .testimonials__text::before {
     content: '';
     display: block;
@@ -511,14 +480,12 @@ a {
     position: absolute;
     z-index: -1;
 }
-
 .text__cite {
     margin-top: 30px;
     border: 1px solid red;
     color: #f7ae3b;
     margin-left: 135px;
 }
-
 .text__cite::after {
     content: '';
         width: 30px;
@@ -539,31 +506,26 @@ a {
     align-items: start;
     padding: 100px 0 200px;
 }
-
 .blog__titl {
     border: 1px solid red;
     color: #f7ae3b;
     margin-bottom: 60px;
 }
-
 .blog__left-block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
 .blog__right {
     border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
 .blog__img-line {
     border: 1px solid red;
     margin-top: 165px;
 }
-
 .blog__small-title {
     border: 1px solid red;
     font-family: MuliExtraBold;
@@ -571,7 +533,6 @@ a {
     color: #f2612d;
     padding: 45px 0 0 60px;
 }
-
 .blog__date {
     border: 1px solid red;
     font-family: MuliRegular;
@@ -579,18 +540,15 @@ a {
     color: #1e1e1e;
     padding: 20px 0 45px 60px;
 }
-
 .blog__text {
     border: 1px solid red;
     width: 475px;
     line-height: 2;
     margin-left: 125px;
 }
-
 .text--bold {
     border: 1px solid red;
 }
-
 .blog__img-arrow {
     border: 1px solid red;
     margin-left: 10px;
@@ -603,7 +561,6 @@ a {
     flex-direction: column;
     align-items: center;
 }
-
 .instagram__link {
     border: 1px solid red;
     display: flex;
@@ -614,11 +571,9 @@ a {
     color: #0aa566;
     margin-bottom: 50px;
 }
-
 .instagram__link-img {
     margin-right: 10px;
 }
-
 .instagram___photo {
     display: flex;
     width: 384px;
@@ -629,32 +584,25 @@ a {
     background-size: cover;
     background-position: center;
 }
-
 .photo__link {
     padding: 20px 25px;
 }
-
 .instagram___photo-block {
     display: flex;
     width: 100%;
 }
-
 .photo--back-1 {
     background-image: url('/CSS/image/photo-1.png');
 }
-
 .photo--back-2 {
     background-image: url('/CSS/image/photo-2.png');
 }
-
 .photo--back-3 {
     background-image: url('/CSS/image/photo-3.png');
 }
-
 .photo--back-4 {
     background-image: url('/CSS/image/photo-4.png');
 }
-
 .photo--back-5 {
     background-image: url('/CSS/image/photo-5.png');
 }
@@ -664,7 +612,6 @@ a {
     display: flex;
     flex-direction: column;
 }
-
 .footer__top {
     border: 1px solid red;
     background: #fba93d;
@@ -672,12 +619,10 @@ a {
     align-items: flex-start;
     padding: 80px 105px 90px 100px;
 }
-
 .footer__logo {
     border: 1px solid red;
     margin: 65px 285px 0 0;
 }
-
 .footer__information {
     border: 1px solid red;
     margin-right: 155px;
@@ -685,7 +630,6 @@ a {
     flex-direction: column;
     align-items: flex-start;
 }
-
 .footer__title {
     border: 1px solid red;
     font-size: 26px;
@@ -693,29 +637,24 @@ a {
     color: #ffffff;
     margin-bottom: 35px;
 }
-
 .information__list {
     list-style: none;
     line-height: 2.5;
     width: 170px;
 }
-
 .information__list-item:last-child {
     margin-bottom: -10px;
 }
-
 .information__list-link {
     border: 1px solid red;
     font-size: 18px;
     font-family: MuliBold;
     color: #6d450c;
 }
-
 .footer__payment {
     border: 1px solid red;
     margin-right: 160px;
 }
-
 .footer__payment-contener {
     border: 1px solid red;
     width: 266px;
@@ -723,23 +662,19 @@ a {
     flex-wrap: wrap;
     align-items: center;
 }
-
 .footer__payment-img {
     padding: 0 20px 20px 0;
 }
-
 .footer__left-block {
     border: 1px solid red;
     display: flex;
     flex-direction: column;
 }
-
 .footer__email {
     border: 1px solid red;
     padding: 30px 0 30px;
     position: relative;
 }
-
 .footer__email::after {
     content: '';
     background-image: url('/CSS/image/Arrowemal.png');
@@ -749,7 +684,6 @@ a {
     bottom: -30px;
     right: 270px;
 }
-
 .footer__email::before {
     content: '';
     background-image: url('/CSS/image/emalIcon.png');
@@ -759,7 +693,6 @@ a {
     top: 50px;
     left: 25px;
 }
-
 .footer__input {
     border: none;
     width: 495px;
@@ -767,27 +700,23 @@ a {
     border-radius: 30px;
     padding-left: 70px;   
 }
-
 .footer__input::placeholder {
     font-family: MuliBold;
     font-size: 17px;
     color: #662b19;
 }
-
 .footer__connection {
     border: 1px solid rgb(4, 7, 75);
     display: flex;
     justify-content: flex-end;
     align-items: center
 }
-
 .connection__text {
     border: 1px solid red;
     margin-right: 45px;
     color: #6d450c;
     font-family: MuliExtraBold;
 }
-
 .connection__list {
     border: 1px solid red;
     width: 110px;
@@ -795,7 +724,6 @@ a {
     display: flex;
     justify-content: space-between;
 }
-
 .footer__bottom {
     border: 2px solid red;
     background: #692921;
@@ -805,7 +733,6 @@ a {
     position: relative;
     height: 60px;
 }
-
 .bottom__contener {
     display: flex;
     align-items: center;
@@ -813,27 +740,23 @@ a {
     width: 960px;
     border: 1px solid red;
 }
-
 .bottom__copyright {
     border: 1px solid red;
     font-size: 13px;
     font-family: MuliRegular;
     color: #af8a82;
 }
-
 .bottom__right-block {
     border: 1px solid red;
     display: flex;
     align-items: center;
 }
-
 .bottom__text {
     font-size: 16px;
     font-family: MuliBold;
     color: #ffffff;
     margin-right: 165px;
 }
-
 .bottom__btn {
     width: 50px;
     height: 50px;
@@ -842,99 +765,3 @@ a {
     bottom: 38px;
     right: 100px;
 }
-
-/* @media (max-width: 320px)*/
-
-@media (max-width: 320px) {
-    .header {
-        height: 65vh;
-    }
-    .header__top {
-        padding: 25px 0 115px;
-    }
-    .logo__icon {
-        width: 190px;
-        height: 70px;
-    }
-    .navigation__btn {
-        display: none;
-    }
-    .header__logo {
-        position: absolute;
-        top: 53%;
-        left: 17%;
-    }
-    .header__btn {
-    width: 235px;
-    height: 70px;
-    font-size: 22px;
-    }
-    .navigation__btn {
-        display: block;
-    }
-    .smoothies {
-        padding: 36px 0;
-        text-align: center;
-    }
-    .smoothies__text {
-        margin-top: 15px;
-    }
-    .smoothies__item {
-        width: 149px;
-        height: 137px;
-        margin-top: 35px;
-        position: relative;
-        top: -50px;
-    }
-    .smoothies__text-img {
-        font-size: 30px;
-        margin-top: 0;
-        position: absolute;
-        top: 107px;
-    }
-    .about {
-        padding: 0;
-    }
-    .about__menu::before {
-        width: 270px;
-    height: 15px;
-    right: 25px;
-    }
-    .about__img {
-        display: none;
-    }
-    .about__menu {
-        max-width: 300px;
-    }
-    .about__list {
-        padding: 35px 0 19px 25px;
-    }
-    .about__btn {
-        width: 285px;
-        height: 72px;
-        border-radius: 40px;
-        padding: 20px 30px;
-        font-size: 25px;
-    }
-}
-/* @media (max-width: 768px) {
-    .smoothies {
-        padding: 35px 0 35px;
-    }
-    .title {
-        font-size: 35px;
-    }
-    .smoothies__text {
-        width: 720px;
-    }
-    .text {
-        font-size: 25px;
-    }
-    .smoothies__items-box {
-        width: 715px;
-    }
-    .smoothies__item {
-        margin-top: 15px;
-    }
-
-} */
