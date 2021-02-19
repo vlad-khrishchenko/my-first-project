@@ -640,7 +640,7 @@ a {
 .information__list {
     list-style: none;
     line-height: 2.5;
-    width: 170px;
+    min-width: 170px;
 }
 .information__list-item:last-child {
     margin-bottom: -10px;
@@ -657,7 +657,7 @@ a {
 }
 .footer__payment-contener {
     border: 1px solid red;
-    width: 266px;
+    min-width: 266px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -695,8 +695,8 @@ a {
 }
 .footer__input {
     border: none;
-    width: 495px;
-    height: 60px;
+    min-width: 495px;
+    min-height: 60px;
     border-radius: 30px;
     padding-left: 70px;   
 }
