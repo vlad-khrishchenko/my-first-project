@@ -56,6 +56,9 @@
     .about {
         padding: 0;
     }
+    .about__title {
+        margin-top: 15px;
+    }
     .about__menu::before {
         width: 270px;
         height: 15px;
@@ -76,6 +79,7 @@
         border-radius: 40px;
         padding: 20px 30px;
         font-size: 25px;
+        margin-bottom: 15px;
     }
 
     .products__item {
@@ -115,9 +119,11 @@
         height: 90px;
         border-radius: 50px;
         font-size: 30px;
+        margin-bottom: 15px;
     }
     .story__img {
         max-width: 300px;
+        margin-bottom: 15px;
     }
     .story__right-block::after {
         display: none;
@@ -226,9 +232,11 @@
     .footer__logo {
         margin: 0;
         text-align: center;
+        margin: 15px 0;
     }
     .footer__information {
         margin-right: 0;
+        margin-bottom: 20px;
     }
     .footer__title {
         font-size: 35px;
@@ -239,6 +247,9 @@
     }
     .footer__payment {
         margin-right: 0px;
+    }
+    .footer__payment-contener {
+        padding-bottom: 25px;
     }
     .footer__payment-img {
         padding: 0 10px 10px 0;
@@ -273,5 +284,26 @@
         padding: 10px 20px;
         min-width: 40px;
         min-height: 65px;
+    }
+
+    .footer__bottom {
+        padding: 85px 0 30px;
+    }
+    .bottom__contener {
+        flex-direction: column-reverse; 
+        width: auto;
+    }
+    .bottom__text {
+        display: none;
+    }
+    .bottom__copyright {
+        font-size: 22px;
+    }
+    .bottom__btn {
+        width: 70px;
+        height: 65px;
+        bottom: 50px;
+        right: 25px;
+        z-index: 300;
     }
 }
