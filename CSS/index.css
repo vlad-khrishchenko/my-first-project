@@ -576,9 +576,8 @@ a {
     margin-right: 10px;
 }
 .instagram___photo {
-    display: flex;
-    width: 384px;
-    height: 384px;
+    min-width: 384px;
+    min-height: 384px;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
