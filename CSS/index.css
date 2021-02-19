@@ -457,6 +457,7 @@ a {
     width: 30px;
     height: 16px;
     background-image: url('/CSS/image/Arrowleft.png');
+
     position: absolute;
     bottom: 80px;
     left: 285px;

@@ -165,4 +165,40 @@
     .text__cite::after {
         right: 200px;
     }
+
+    .blog {
+        min-width: 310px;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 20px;
+    }
+    .blog__titl {
+        margin-bottom: 10px;
+        font-size: 50px;
+    }
+    .blog__img-line {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .blog__small-title {
+        padding: 10px 0;
+    }
+    .blog__date {
+        padding: 10px 0 10px 30px;
+    }
+    .blog__text {
+        width: 290px;
+        line-height: 2;
+        margin-left: 15px;
+    }
+    .blog__img {
+        width: 100%;
+    }
+    .text--bold {
+        font-size: 25px;
+    }
+    .blog__img-arrow {
+        width: 35px;
+        height: 25px;
+    }
 }
