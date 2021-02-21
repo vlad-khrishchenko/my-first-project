@@ -1,6 +1,6 @@
 /* @media (max-width: 320px)*/
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .header {
         height: 70vh;
     }
@@ -20,10 +20,11 @@
         left: 17%;
     }
     .header__btn {
-        width: 235px;
-        height: 70px;
-        font-size: 22px;
-    }
+        width: 270px;
+        height: 85px;
+        font-size: 30px;
+        border-radius: 50px;
+}
     .navigation__btn {
         display: block;
     }
@@ -34,9 +35,10 @@
     }
     .smoothies__text {
         margin-top: 15px;
+        padding: 0 15px 15px;
     }
     .smoothies__item {
-        width: 149px;
+        width: 170px;
         height: 137px;
         margin-top: 35px;
         position: relative;
@@ -54,6 +56,7 @@
     }
     .about__title {
         margin-top: 15px;
+        text-align: center;
     }
     .about__menu::before {
         width: 270px;
@@ -64,7 +67,7 @@
         display: none;
     }
     .about__menu {
-        max-width: 300px;
+        max-width: 340px;
     }
     .about__list {
         padding: 35px 0 19px 25px;
@@ -73,9 +76,8 @@
         width: 285px;
         height: 72px;
         border-radius: 40px;
-        padding: 20px 30px;
         font-size: 25px;
-        margin-bottom: 15px;
+        margin: 0 30px 10px;
     }
 
     .products__item {
