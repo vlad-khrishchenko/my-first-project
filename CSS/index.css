@@ -55,7 +55,7 @@ a {
 }
 
 .title {
-    font-size: calc(35px + (50 - 35)*((100vw - 320px) / (1920 - 320)));
+    font-size: calc(40px + (50 - 40)*((100vw - 320px) / (1920 - 320)));
     font-family: MuliExtraBold;
 }
 
@@ -274,8 +274,8 @@ a {
     width: 450px;
     height: 13px;
     position: absolute;
-    top: 125px;
-    right: 80px;
+    right: 40px;
+    top: 150px;
 }
 .about__title {
     /* border: 1px solid red; */

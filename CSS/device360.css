@@ -81,7 +81,7 @@
     }
 
     .products__item {
-        padding: 13px 0px 15px;
+        padding: 13px 10px 15px;
     }
     .products__title {
         padding: 15px 0;
@@ -106,11 +106,13 @@
     }
     .story__title {
         font-size: 50px;
+        text-align: center;
     }
     .story__text {
-        max-width: 300px;
+        max-width: 340px;
         line-height: 2;
-        padding: 10px 0px;
+        padding: 10px 10px;
+        text-align: center;
     }
     .story__btn {
         width: 300px;
@@ -118,9 +120,10 @@
         border-radius: 50px;
         font-size: 30px;
         margin-bottom: 15px;
+        margin-left: 7%;
     }
     .story__img {
-        max-width: 300px;
+        max-width: 345px;
         margin-bottom: 15px;
     }
     .story__right-block::after {
