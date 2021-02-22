@@ -189,7 +189,7 @@
         width: 100%;
     }
     .blog__small-title {
-        padding: 10px 0;
+        padding: 10px 25px;
     }
     .blog__date {
         padding: 10px 0 10px 30px;
@@ -228,7 +228,7 @@
 
     .footer__top {
         align-items: unset;
-        padding: 0;
+        padding: 0 10px;
         flex-direction: column;
     }
     .footer__logo {
@@ -265,9 +265,12 @@
         left: 10px;
     }
     .footer__input {
-        min-width: 290px;
+        min-width: 325px;
         min-height:80px;
         padding-left: 40px;
+    }
+    .footer__input::placeholder {
+        font-size: 20px;
     }
     .footer__connection {
         flex-direction: column;
@@ -293,7 +296,6 @@
     }
     .bottom__contener {
         flex-direction: column-reverse; 
-        width: auto;
     }
     .bottom__text {
         display: none;
