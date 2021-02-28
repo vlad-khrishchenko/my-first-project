@@ -344,7 +344,7 @@ a {
     border: 3px solid white;
     padding: 2rem 3rem;
     color: white;
-    font-size: calc(30px + (21 - 30)*((100vw - 320px) / (1920 - 320)));
+    font-size: 2.1rem;
 }
 .products__item--chocolate {
     background-color: #662b19;
