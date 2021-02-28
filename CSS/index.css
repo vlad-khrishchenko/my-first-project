@@ -228,6 +228,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     max-width: 95.2rem;
+    position: relative;
 }
 .smoothies__item {
     /* border: 1px solid red; */

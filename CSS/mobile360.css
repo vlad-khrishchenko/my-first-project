@@ -16,4 +16,27 @@
         font-size: 3.5rem;
     }
 
+    .smoothies {
+        padding: 1.5rem 0 4.2rem;
+    }
+    .title {
+        margin-left: 10%;
+    }
+    .smoothies__text {
+        margin-top: 1rem;
+    }
+    .smoothies__item {
+        width: 17.7rem;
+        height: 9.5rem;
+        margin-top: 5rem;
+    }
+    .smoothies__item:last-child {
+        position: absolute;
+        bottom: -1.5rem;
+        right: 0rem;
+        text-align: center;
+    }
+    .smoothies__text-img {
+        margin-top: 0.7rem;
+    }
 }
